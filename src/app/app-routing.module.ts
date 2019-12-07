@@ -26,9 +26,18 @@ const routes: Routes = [
   {
     path: 'user',
     loadChildren: () => import('./user/user.module').then( m => m.UserPageModule)
-  },   {
+  },   
+  {
     path: 'user/:userId',
     loadChildren: () => import('./user/user.module').then( m => m.UserPageModule)
+  },
+  {
+    path: 'user-edit',
+    loadChildren: () => import('./user-edit/user-edit.module').then( m => m.UserEditPageModule)
+  },
+  {
+    path: 'user-delete',
+    loadChildren: () => import('./user-delete/user-delete.module').then( m => m.UserDeletePageModule)
   }
  
 ];
