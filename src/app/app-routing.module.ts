@@ -38,31 +38,30 @@ const routes: Routes = [
   {
     path: 'user-delete',
     loadChildren: () => import('./user-delete/user-delete.module').then( m => m.UserDeletePageModule)
-  }
-  {
-    path: 'articles',
-    loadChildren: () => import('./articles/articles.module').then( m => m.ArticlePageModule)
-  },
-  {
-    path: 'article',
-    loadChildren: () => import('./article/article.module').then( m => m.ArticlePageModule)
-  },   
-  {
-    path: 'article/:articleId',
-    loadChildren: () => import('./article/article.module').then( m => m.ArticlePageModule)
-  },
-  {
-    path: 'article-edit',
-    loadChildren: () => import('./article-edit/article-edit.module').then( m => m.ArticleEditPageModule)
-  },
-  {
-    path: 'article-delete',
-    loadChildren: () => import('./article-delete/article-delete.module').then( m => m.ArticleDeletePageModule)
   },
   {
     path: 'articles',
     loadChildren: () => import('./articles/articles.module').then( m => m.ArticlesPageModule)
   }
+  
+  // ,
+  // {
+  //   path: 'article',
+  //   loadChildren: () => import('./article/article.module').then( m => m.ArticlePageModule)
+  // },   
+  // {
+  //   path: 'article/:articleId',
+  //   loadChildren: () => import('./article/article.module').then( m => m.ArticlePageModule)
+  // },
+  // {
+  //   path: 'article-edit',
+  //   loadChildren: () => import('./article-edit/article-edit.module').then( m => m.ArticleEditPageModule)
+  // },
+  // {
+  //   path: 'article-delete',
+  //   loadChildren: () => import('./article-delete/article-delete.module').then( m => m.ArticleDeletePageModule)
+  // }
+
 ];
 
 @NgModule({
