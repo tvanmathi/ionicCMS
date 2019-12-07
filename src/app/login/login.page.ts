@@ -27,7 +27,8 @@ export class LoginPage implements OnInit {
     }
 
     if(response.success===true){
-      this.router.navigate(['/users']);
+      // this.router.navigate(['/users']);
+      this.router.navigate(['/articles']);
     }
 
   }

@@ -30,7 +30,12 @@ export class AppComponent {
       title: 'Users',
       url: '/users',
       icon: 'people'
-    }       
+    },
+    {
+      title: 'Article',
+      url: '/article',
+      icon: 'document'
+    }            
   ];
 
   constructor(
