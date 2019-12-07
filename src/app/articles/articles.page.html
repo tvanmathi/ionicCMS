@@ -13,7 +13,7 @@
   
     <ion-list *ngIf="articles">
       <ion-item *ngFor="let article of articles" [routerLink]="['/article', article._id]">
-        <ion-label>{{ article.username }}</ion-label>
+        <ion-label>{{ article.title }}</ion-label>
       </ion-item>
     </ion-list>
   
