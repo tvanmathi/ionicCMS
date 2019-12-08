@@ -10,6 +10,8 @@ import { AuthService } from '../auth.service';
 })
 export class LogoutPage implements OnInit {
 
+  error: boolean = false;
+
   constructor(
     private authService: AuthService,
     private router: Router
@@ -30,7 +32,9 @@ export class LogoutPage implements OnInit {
         if(response.success == 'true')  {
           this.router.navigate(['/login']);
         }
-
+        else{
+          this.error = true; // set error flag
+        }
       }
     );
   }
