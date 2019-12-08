@@ -44,11 +44,11 @@ const routes: Routes = [
     loadChildren: () => import('./article/article.module').then( m => m.ArticlePageModule)
   },
   {
-    path: 'article-edit',
+    path: 'article-edit/:articleId',
     loadChildren: () => import('./article-edit/article-edit.module').then( m => m.ArticleEditPageModule)
   },
   {
-    path: 'article-delete',
+    path: 'article-delete/:articleId',
     loadChildren: () => import('./article-delete/article-delete.module').then( m => m.ArticleDeletePageModule)
   },
 ];
