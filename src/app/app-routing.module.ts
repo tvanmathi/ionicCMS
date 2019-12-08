@@ -51,6 +51,14 @@ const routes: Routes = [
     path: 'article-delete/:articleId',
     loadChildren: () => import('./article-delete/article-delete.module').then( m => m.ArticleDeletePageModule)
   },
+  {
+    path: 'user-create',
+    loadChildren: () => import('./user-create/user-create.module').then( m => m.UserCreatePageModule)
+  },
+  {
+    path: 'article-create',
+    loadChildren: () => import('./article-create/article-create.module').then( m => m.ArticleCreatePageModule)
+  },
 ];
 
 @NgModule({

@@ -29,6 +29,10 @@ export class ArticlesService {
     this.url = `${l.protocol}//${host}/api/articles/`;
   }
 
+  createArticle(article: Article): Observable<Article>{
+    return this.http.post<Article>(this.url, article, httpOptions);
+  }
+
   getArticles(): Observable<Article>{
     return this.http.get<Article>(this.url, httpOptions);
   }
