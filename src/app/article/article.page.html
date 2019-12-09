@@ -29,18 +29,18 @@
       
         </ion-card>
       
-        <ion-fab vertical="bottom" horizontal="end">
+        <ion-fab vertical="bottom" horizontal="end" title="Edit/Delete Article">
           <ion-fab-button  color="secondary">
             <ion-icon name="arrow-dropleft"></ion-icon>
           </ion-fab-button>
       
           <ion-fab-list side="start" *ngIf="article">
       
-            <ion-fab-button color="light" [routerLink]="['/article-edit', article._id]">
+            <ion-fab-button color="light" title="Edit Article" [routerLink]="['/article-edit', article._id]">
               <ion-icon name="create"></ion-icon>
             </ion-fab-button>
       
-            <ion-fab-button color="danger" [routerLink]="['/article-delete', article._id]">
+            <ion-fab-button color="danger" title="Delete Article" [routerLink]="['/article-delete', article._id]">
               <ion-icon name="trash"></ion-icon>
             </ion-fab-button>
       
